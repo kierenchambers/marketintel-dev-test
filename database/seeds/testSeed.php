@@ -21,7 +21,7 @@ class testSeed extends Seeder
 
         // Modify these dates accordingly to desired demo data creation
         $startDate = Carbon::parse('2019-01-01');
-        $endDate = Carbon::parse('2019-04-20');
+        $endDate = Carbon::parse('2019-04-31');
 
         // Modify these for desired decimal range.
         $randomNumberStart = 0;
