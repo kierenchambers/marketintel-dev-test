@@ -10,4 +10,15 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 .DS_Store
-/.idea
+.idea
+.project
+
+
+/laradock/nginx/ssl/*.crt
+/laradock/nginx/ssl/*.key
+/laradock/nginx/ssl/*.csr
+/laradock/jenkins/jenkins_home
+/laradock/logstash/pipeline/*.conf
+/laradock/logstash/config/pipelines.yml
+/laradock/data
+/laradock/logs
