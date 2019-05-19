@@ -19,7 +19,7 @@ class testSeed extends Seeder
         // Add any additional domains you would like
         $domains = ['apple.com','techradar.com','carphonewarehouse.com','samsung.com','amazon.co.uk','trustedreviews.com','gsmarena.com','wikipedia.org','argos.co.uk','o2.co.uk'];
 
-        // Modify these dates accordingly to desired demo data creation
+        // Modify these dates for desired date range
         $startDate = Carbon::parse('2019-01-01');
         $endDate = Carbon::parse('2019-04-31');
 

@@ -63,11 +63,20 @@ php artisan migrate
 That's it, the application should now be ready and available on http://localhost
 
 ## Sample Data (Optional)
-As the API pull's in limited as well as identical data, if desired optional data can be generated for the daily scores.
+As the data that the API pull's in is quite limited as well as identical, optionally additional randomised data can be generated to produce unique daily scores from a given date range.
 
 To do so:
 * Open the 'testSeed.php' file found inside the database/seeds directory.
 * Change the PHP variables as desired to configure the the date range of data that is generated as well as the randomly generated decimals min and max range.
+```php
+    // Modify these dates for desired date range
+    $startDate = Carbon::parse('2019-01-01');
+    $endDate = Carbon::parse('2019-04-31');
+    
+    // Modify these for desired decimal range.
+    $randomNumberStart = 0;
+    $randomNumberEnd = 3;
+```
 * Enable the seed by uncommenting  the following line in the 'DatebaseSeeder.php' file found in the same directory:
 ```php
     public function run()
